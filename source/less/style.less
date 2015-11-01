@@ -1,2 +1,29 @@
+@import 'normalize.less';
+//Переменные
 @import 'variables.less';
-@import 'font.less';
+//Шрифты
+@import 'font.less'; 
+
+.clearfix
+{
+    display: block;
+    zoom: 1;
+
+    &:after
+    {
+        font-size: 0;
+
+        display: block;
+        visibility: hidden;
+        clear: both;
+
+        height: 0;
+
+        content: ' ';
+    }
+}
+
+button
+{
+    border-radius: 30px;
+}

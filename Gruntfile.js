@@ -41,7 +41,7 @@ module.exports = function(grunt) {
         ]
       },
       style: {
-        src: 'build/css/*.css'
+        src: 'source/css/*.css'
       }
     },
 
@@ -102,13 +102,17 @@ module.exports = function(grunt) {
 
     watch: {
       style: {
-        files: ['source/less/**/*.less'],
+        files: ['source/less/*.less'],
         tasks: ['csscomb','less'],
         options: {
           spawn: false,
           livereload: true
         }
       }
+    },
+
+    htmllint: {
+      all: ['source/**/*.html']
     },
 
     browserSync: {
