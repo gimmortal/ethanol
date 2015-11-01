@@ -1,8 +1,22 @@
+/** sprite: mysprite; sprite-image: url('../img/mysprite.png'); sprite-layout: vertical */
+///** sprite-ref: mysprite; */
 @import 'normalize.less';
+@import 'lessmix.less';
 //Переменные
 @import 'variables.less';
 //Шрифты
-@import 'font.less'; 
+@import 'font.less';
+
+*
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    outline: none;
+
+    //*behavior: url('boxsizing.htc');
+}
 
 .clearfix
 {
@@ -23,7 +37,42 @@
     }
 }
 
-button
+.wrapper
 {
-    border-radius: 30px;
+    width: 940px;
+
+    .center;
 }
+
+.logo
+{
+    float: left;
+
+    margin-top: 35px;
+}
+
+.menu
+{
+    height: 120px;
+
+    border: 2px solid #000;
+
+    &__list
+    {
+        float: right;
+    }
+
+    &__item
+    {
+        font-size: 14px;
+
+        display: inline-block;
+
+        padding-bottom: 10px;
+
+        text-transform: uppercase;
+
+        border-bottom: 5px solid @color_yellow;
+    }
+}
+

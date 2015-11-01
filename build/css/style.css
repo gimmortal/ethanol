@@ -166,9 +166,6 @@ legend {
 textarea {
   overflow: auto;
 }
-a {
-  text-decoration: none;
-}
 optgroup {
   font-weight: bold;
 }
@@ -215,12 +212,6 @@ th {
   src: url('../font/lato-italic.eot');
   src: url('../font/lato-italic.eot?#iefix') format('embedded-opentype'), url('../font/lato-italic.woff') format('woff'), url('../font/lato-italic.ttf') format('truetype');
 }
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  outline: none;
-}
 .clearfix {
   display: block;
   zoom: 1;
@@ -233,26 +224,21 @@ th {
   height: 0;
   content: ' ';
 }
-.wrapper {
-  width: 940px;
-  margin-right: auto;
-  margin-left: auto;
+.item1 {
+  width: 220px;
+  height: 159px;
+  background-image: url('../img/item_1.jpg') /** sprite-ref: mysprite; */;
+  background-repeat: no-repeat;
 }
-.logo {
-  float: left;
-  margin-top: 35px;
+.item2 {
+  width: 220px;
+  height: 159px;
+  background-image: url('../img/item_2.jpg') /** sprite-ref: mysprite; */;
+  background-repeat: no-repeat;
 }
-.menu {
-  height: 120px;
-  border: 2px solid #000;
-}
-.menu__list {
-  float: right;
-}
-.menu__item {
-  font-size: 14px;
-  display: inline-block;
-  padding-bottom: 10px;
-  text-transform: uppercase;
-  border-bottom: 5px solid '#ffca26';
+.item3 {
+  width: 220px;
+  height: 159px;
+  background-image: url('../img/item_3.jpg') /** sprite-ref: mysprite; */;
+  background-repeat: no-repeat;
 }
