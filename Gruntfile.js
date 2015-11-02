@@ -9,7 +9,7 @@ module.exports = function (grunt) {
         less: {
             style: {
                 files: {
-                    'source/css/style.css': 'source/less/style.less'
+                    'source/css/style.css':  'source/less/style.less'
                 }
             }
         },
@@ -103,7 +103,7 @@ module.exports = function (grunt) {
 
         watch: {
             style: {
-                files: ['source/less/*.less'],
+                files: ['source/less/**/*.less'],
                 tasks: ['csscomb', 'less'],
                 options: {
                     spawn: false,

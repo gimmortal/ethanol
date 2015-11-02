@@ -33,5 +33,8 @@
     "grunt-postcss": "^0.6.x",
     "grunt-smartsprites": "git://github.com/LoicMahieu/grunt-smartsprites",
     "load-grunt-tasks": "^3.2.x"
+  },
+  "dependencies": {
+    "normalize.less": "^1.0.0"
   }
 }

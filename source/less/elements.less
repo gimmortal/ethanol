@@ -1,0 +1,46 @@
+@import '../../node_modules/normalize.less/normalize.less';
+@import 'lessmix.less';
+//Переменные
+@import 'variables.less';
+//Шрифты
+@import 'font.less';
+
+*
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    outline: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.clearfix
+{
+    display: block;
+    zoom: 1;
+
+    &:after
+    {
+        font-size: 0;
+
+        display: block;
+        visibility: hidden;
+        clear: both;
+
+        height: 0;
+
+        content: ' ';
+    }
+}
+
+.wrapper
+{
+    width: 940px;
+
+    .center;
+}

@@ -1,28 +1,66 @@
 /** sprite: mysprite; sprite-image: url('../img/mysprite.png'); sprite-layout: vertical */
 ///** sprite-ref: mysprite; */
-@import 'normalize.less';
-@import 'lessmix.less';
-//Шрифты
-@import 'font.less';
-//Переменные
-@import 'variables.less';
 
+@import 'elements.less';
 @import 'block/menu.less';
+
 
 .block1
 {
-    width: auto;
-
     .center;
-}
+} 
 
 .block1-top
 {
     width: auto;
     height: 792px;
+    padding-left: 20px;
 
     background: url('@{img}/block1__top.jpg') no-repeat;
     background-position: 50% 0;
 
     .center;
-} 
+
+    &__title
+    {
+        font-family: @black;
+        font-size: 40px;
+
+        margin: 0;
+        padding-top: 260px;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: @color_yellow-light;
+    }
+
+    &__text
+    {
+        font-family: @regular;
+        font-size: 22px;
+
+        margin-top: 20px;
+        margin-bottom: 120px;
+
+        text-align: center;
+        letter-spacing: .2px;
+
+        color: @color_white;
+    }
+
+    &__link
+    {
+        font-family: @regular;
+        font-size: 22px;
+
+        display: block;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: @color_white;
+
+        .center;
+    }
+}  
