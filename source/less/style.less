@@ -2,77 +2,27 @@
 ///** sprite-ref: mysprite; */
 @import 'normalize.less';
 @import 'lessmix.less';
-//Переменные
-@import 'variables.less';
 //Шрифты
 @import 'font.less';
+//Переменные
+@import 'variables.less';
 
-*
+@import 'block/menu.less';
+
+.block1
 {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-
-    outline: none;
-
-    //*behavior: url('boxsizing.htc');
-}
-
-.clearfix
-{
-    display: block;
-    zoom: 1;
-
-    &:after
-    {
-        font-size: 0;
-
-        display: block;
-        visibility: hidden;
-        clear: both;
-
-        height: 0;
-
-        content: ' ';
-    }
-}
-
-.wrapper
-{
-    width: 940px;
+    width: auto;
 
     .center;
 }
 
-.logo
+.block1-top
 {
-    float: left;
+    width: auto;
+    height: 792px;
 
-    margin-top: 35px;
-}
+    background: url('@{img}/block1__top.jpg') no-repeat;
+    background-position: 50% 0;
 
-.menu
-{
-    height: 120px;
-
-    border: 2px solid #000;
-
-    &__list
-    {
-        float: right;
-    }
-
-    &__item
-    {
-        font-size: 14px;
-
-        display: inline-block;
-
-        padding-bottom: 10px;
-
-        text-transform: uppercase;
-
-        border-bottom: 5px solid @color_yellow;
-    }
-}
-
+    .center;
+} 

@@ -48,7 +48,7 @@ module.exports = function (grunt) {
         csscomb: {
             style: {
                 expand: true,
-                src: ["source/less/**/*.less"]
+                src: ["source/less/**/*.less", "source/less/block/*.less"]
             }
         },
 
@@ -128,7 +128,7 @@ module.exports = function (grunt) {
 
         browserSync: {
             bsFiles: {
-                src: 'less/css/*.css'
+                src: ['source/css/*.css', 'source/*.html'],
             },
             options: {
                 server: {

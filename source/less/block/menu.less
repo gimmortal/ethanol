@@ -1,0 +1,50 @@
+.logo
+{
+    float: left;
+
+    margin-top: 32px;
+}
+
+.menu
+{
+    width: 100%;
+    height: 120px;
+
+
+    &__list
+    {
+        float: right;
+
+        margin-top: 45px;
+    }
+
+    &__link
+    {
+        font-family: @bold;
+        font-size: 14px;
+        line-height: 1;
+
+        display: inline-block;
+
+        margin-right: 31px;
+        padding-bottom: 13px;
+
+        text-transform: uppercase;
+
+        color: @color_black;
+
+        &:hover {
+            border-bottom: 5px solid @color_yellow;
+        }
+
+        &:last-child
+        {
+            margin-right: 0;
+        }
+
+        &--active
+        {
+            border-bottom: 5px solid @color_yellow;
+        }
+    }
+}

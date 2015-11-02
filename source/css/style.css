@@ -240,19 +240,42 @@ th {
 }
 .logo {
   float: left;
-  margin-top: 35px;
+  margin-top: 32px;
 }
 .menu {
+  width: 100%;
   height: 120px;
-  border: 2px solid #000;
 }
 .menu__list {
   float: right;
+  margin-top: 45px;
 }
-.menu__item {
+.menu__link {
+  font-family: latobold;
   font-size: 14px;
+  line-height: 1;
   display: inline-block;
-  padding-bottom: 10px;
+  margin-right: 31px;
+  padding-bottom: 13px;
   text-transform: uppercase;
-  border-bottom: 5px solid '#ffca26';
+  color: #333333;
+}
+.menu__link:last-child {
+  margin-right: 0;
+}
+.menu__link--active {
+  border-bottom: 5px solid #ffca26;
+}
+.block1 {
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+.block1-top {
+  width: auto;
+  height: 792px;
+  background: url('../img/block1__top.jpg') no-repeat;
+  background-position: 50% 0;
+  margin-right: auto;
+  margin-left: auto;
 }
