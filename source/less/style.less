@@ -3,64 +3,135 @@
 
 @import 'elements.less';
 @import 'block/menu.less';
+@import 'block/block1.less';
 
-
-.block1
+.block2
 {
-    .center;
-} 
+    padding-top: 136px;
 
-.block1-top
-{
-    width: auto;
-    height: 792px;
-    padding-left: 20px;
-
-    background: url('@{img}/block1__top.jpg') no-repeat;
-    background-position: 50% 0;
-
-    .center;
-
-    &__title
+    &-container
     {
-        font-family: @black;
-        font-size: 40px;
-
-        margin: 0;
-        padding-top: 260px;
-
-        text-align: center;
-        text-transform: uppercase;
-
-        color: @color_yellow-light;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-top: 153px;
     }
 
-    &__text
+    &-left
     {
-        font-family: @regular;
-        font-size: 22px;
-
-        margin-top: 20px;
-        margin-bottom: 120px;
-
-        text-align: center;
-        letter-spacing: .2px;
-
-        color: @color_white;
-    }
-
-    &__link
-    {
-        font-family: @regular;
-        font-size: 22px;
-
         display: block;
+        float: left;
 
-        text-align: center;
-        text-transform: uppercase;
+        width: 50%;
 
-        color: @color_white;
+        &__item
+        {
+            width: 310px;
+            margin-bottom: 5px;
 
-        .center;
+            text-align: right;
+            &-title
+            {
+                font-family: @bold;
+                font-size: 20px;
+
+                position: relative;
+
+                margin-bottom: 10px;
+
+                color: @color_gray;
+            }
+            &-img
+            {
+                position: relative;
+                top: -77px;
+                left: 362px;
+
+                display: block;
+
+                fill: @color_white;
+            }
+
+            &-wrap
+            {
+                position: relative;
+
+                &:before
+                {
+                    position: absolute;
+                    top: -104px;
+                    right: -148px;
+
+                    display: block;
+
+                    width: 130px;
+                    height: 123px;
+
+                    content: '';
+
+                    background-image: url('@{img}/back.png')/** sprite-ref: mysprite; */;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
     }
-}  
+
+
+    &-right
+    {
+        float: right;
+
+        width: 50%;
+
+        &__item
+        {
+            width: 310px;
+            margin-bottom: 5px;
+            margin-left: 30px;
+
+            text-align: left;
+            &-title
+            {
+                font-family: @bold;
+                font-size: 20px;
+
+                position: relative;
+
+                margin-bottom: 10px;
+
+                color: @color_gray;
+            }
+            &-img
+            {
+                position: relative;
+                top: -77px;
+                left: 362px;
+
+                display: block;
+
+                fill: @color_white;
+            }
+
+            &-wrap
+            {
+                position: relative;
+
+                &:before
+                {
+                    position: absolute;
+                    top: -104px;
+                    right: -148px;
+
+                    display: block;
+
+                    width: 130px;
+                    height: 123px;
+
+                    content: '';
+
+                    background-image: url('@{img}/back.png')/** sprite-ref: mysprite; */;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}

@@ -44,3 +44,58 @@ a
 
     .center;
 }
+
+.section
+{
+    &__header
+    {
+        font-family: @light;
+        font-size: 30px;
+        font-weight: 100;
+
+        margin-bottom: 5px;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: @color_black;
+
+        & span
+        {
+            font-family: @bold;
+
+            color: @color_yellow-light;
+        }
+    }
+    &__text
+    {
+        font-family: @italic;
+        font-size: 22px;
+
+        position: relative;
+
+        padding-bottom: 54px;
+
+        text-align: center;
+
+        color: @color_gray;
+        border-bottom: 2px solid @color_gray;
+
+        &:after
+        {
+            position: absolute;
+            top: 60px;
+            left: 46%;
+
+            display: block;
+
+            width: 58px;
+            height: 56px;
+
+            content: '';
+
+            background-image: url('@{img}/e.png')/** sprite-ref: mysprite; */;
+        }
+    }
+}
+

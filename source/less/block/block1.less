@@ -1,0 +1,109 @@
+.block1
+{
+    min-width: 940px;
+
+    .center;
+}
+
+.block1-top
+{
+    height: 792px;
+    padding-left: 20px;
+
+    background: url('@{img}/block1__top.jpg') no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+
+    .center;
+
+    &__title
+    {
+        font-family: @black;
+        font-size: 40px;
+
+        margin: 0;
+        padding-top: 260px;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: @color_yellow-light;
+    }
+
+    &__text
+    {
+        font-family: @regular;
+        font-size: 22px;
+
+        margin-top: 20px;
+        margin-bottom: 120px;
+
+        text-align: center;
+        letter-spacing: .2px;
+
+        color: @color_white;
+    }
+
+    &__link
+    {
+        font-family: @regular;
+        font-size: 22px;
+
+        display: block;
+
+        width: 190px;
+        padding-bottom: 25px;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: @color_white;
+        border-bottom: 5px solid @color_yellow;
+
+        .center;
+    }
+}
+
+.block1-bottom
+{
+    min-height: 400px;
+
+    background-color: @color_yellow;
+
+    &__header
+    {
+        font-family: @regular;
+        font-size: 22px;
+        //position: relative;
+
+        display: block;
+
+        width: 750px;
+        margin-top: 0;
+        padding-top: 100px;
+
+        text-align: center;
+
+        color: @color_white;
+
+        .center;
+
+        &:before
+        {
+            position: relative;
+
+            display: block;
+
+            width: 159px;
+            height: 44px;
+            margin-bottom: 62px;
+
+            content: '';
+
+            background-image: url('@{img}/logo-invers.png') /** sprite-ref: mysprite; */;
+            background-repeat: no-repeat;
+
+            .center;
+        }
+    }
+}

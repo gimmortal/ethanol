@@ -1,0 +1,137 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?lm242q');
+	src:url('fonts/icomoon.eot?lm242q#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?lm242q') format('truetype'),
+		url('fonts/icomoon.woff?lm242q') format('woff'),
+		url('fonts/icomoon.svg?lm242q#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+	content: "\f002";
+}
+.icon-envelope-o:before {
+	content: "\f003";
+}
+.icon-heart:before {
+	content: "\f004";
+}
+.icon-refresh:before {
+	content: "\f021";
+}
+.icon-video-camera:before {
+	content: "\f03d";
+}
+.icon-image:before {
+	content: "\f03e";
+}
+.icon-photo:before {
+	content: "\f03e";
+}
+.icon-picture-o:before {
+	content: "\f03e";
+}
+.icon-pencil:before {
+	content: "\f040";
+}
+.icon-map-marker:before {
+	content: "\f041";
+}
+.icon-phone:before {
+	content: "\f095";
+}
+.icon-twitter:before {
+	content: "\f099";
+}
+.icon-facebook:before {
+	content: "\f09a";
+}
+.icon-facebook-f:before {
+	content: "\f09a";
+}
+.icon-hand-o-right:before {
+	content: "\f0a4";
+}
+.icon-group:before {
+	content: "\f0c0";
+}
+.icon-users:before {
+	content: "\f0c0";
+}
+.icon-pinterest:before {
+	content: "\f0d2";
+}
+.icon-google-plus:before {
+	content: "\f0d5";
+}
+.icon-envelope:before {
+	content: "\f0e0";
+}
+.icon-linkedin:before {
+	content: "\f0e1";
+}
+.icon-lightbulb-o:before {
+	content: "\f0eb";
+}
+.icon-desktop:before {
+	content: "\f108";
+}
+.icon-mobile:before {
+	content: "\f10b";
+}
+.icon-mobile-phone:before {
+	content: "\f10b";
+}
+.icon-flag-checkered:before {
+	content: "\f11e";
+}
+.icon-dribbble:before {
+	content: "\f17d";
+}
+.icon-bank:before {
+	content: "\f19c";
+}
+.icon-institution:before {
+	content: "\f19c";
+}
+.icon-university:before {
+	content: "\f19c";
+}
+.icon-stumbleupon:before {
+	content: "\f1a4";
+}
+.icon-file-image-o:before {
+	content: "\f1c5";
+}
+.icon-file-photo-o:before {
+	content: "\f1c5";
+}
+.icon-file-picture-o:before {
+	content: "\f1c5";
+}
+.icon-file-code-o:before {
+	content: "\f1c9";
+}
+.icon-paper-plane:before {
+	content: "\f1d8";
+}
+.icon-send:before {
+	content: "\f1d8";
+}
+
