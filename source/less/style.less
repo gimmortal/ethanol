@@ -22,6 +22,8 @@
 
         &__img
         {
+            position: relative;
+
             width: 460px;
             height: 497px;
 
@@ -29,6 +31,56 @@
             background-repeat: no-repeat;
         }
     }
+
+
+    .social
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        height: 67px;
+        margin: 0;
+        padding: 0;
+
+        &__link
+        {
+            display: inline-block;
+
+            margin-right: 2px;
+            padding-top: 15px;
+            padding-left: 20px;
+
+            background-color: @color_yellow;
+
+            .size(67px, 67px);
+
+            &--tw
+            {
+                padding-left: 15px;
+            }
+
+            &--in
+            {
+                padding-left: 15px;
+            }
+
+
+
+            &-img
+            {
+                display: block;
+
+                margin-bottom: 0;
+                padding-bottom: 0;
+
+                fill: @color_white;
+            }
+        }
+    }
+
 
     &-right
     {

@@ -649,10 +649,41 @@ a {
   float: left;
 }
 .block3-left__img {
+  position: relative;
   width: 460px;
   height: 497px;
   background-image: url('../img/profile.jpg');
   background-repeat: no-repeat;
+}
+.block3 .social {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 67px;
+  margin: 0;
+  padding: 0;
+}
+.block3 .social__link {
+  display: inline-block;
+  margin-right: 2px;
+  padding-top: 15px;
+  padding-left: 20px;
+  background-color: #ffca26;
+  width: 67px;
+  height: 67px;
+}
+.block3 .social__link--tw {
+  padding-left: 15px;
+}
+.block3 .social__link--in {
+  padding-left: 15px;
+}
+.block3 .social__link-img {
+  display: block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  fill: #ffffff;
 }
 .block3-right {
   float: right;
