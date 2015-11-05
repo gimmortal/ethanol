@@ -552,7 +552,9 @@ a {
   margin-left: auto;
 }
 .block2 {
+  margin-bottom: 220px;
   padding-top: 136px;
+  color: #999999;
 }
 .block2-container {
   margin-right: 20px;
@@ -574,7 +576,6 @@ a {
   font-size: 20px;
   position: relative;
   margin-bottom: 10px;
-  color: #999999;
 }
 .block2-left__item-img {
   position: relative;
@@ -600,11 +601,12 @@ a {
 .block2-right {
   float: right;
   width: 50%;
+  padding-left: 120px;
 }
 .block2-right__item {
   width: 310px;
   margin-bottom: 5px;
-  margin-left: 30px;
+  margin-left: 45px;
   text-align: left;
 }
 .block2-right__item-title {
@@ -617,9 +619,12 @@ a {
 .block2-right__item-img {
   position: relative;
   top: -77px;
-  left: 362px;
+  left: -111px;
   display: block;
   fill: #ffffff;
+}
+.block2-right__item-img--fix {
+  left: -102px;
 }
 .block2-right__item-wrap {
   position: relative;
@@ -627,11 +632,28 @@ a {
 .block2-right__item-wrap:before {
   position: absolute;
   top: -104px;
-  right: -148px;
+  right: 330px;
   display: block;
   width: 130px;
   height: 123px;
   content: '';
   background-image: url('../img/back.png') /** sprite-ref: mysprite; */;
   background-repeat: no-repeat;
+}
+.block3-container {
+  margin-top: 116px;
+  background-color: #f3f3f3;
+}
+.block3-left {
+  display: block;
+  float: left;
+}
+.block3-left__img {
+  width: 460px;
+  height: 497px;
+  background-image: url('../img/profile.jpg');
+  background-repeat: no-repeat;
+}
+.block3-right {
+  float: right;
 }

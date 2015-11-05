@@ -1,0 +1,136 @@
+.block2
+{
+    margin-bottom: 220px;
+    padding-top: 136px;
+
+    color: @color_gray;
+    &-container
+    {
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-top: 153px;
+    }
+
+    &-left
+    {
+        display: block;
+        float: left;
+
+        width: 50%;
+
+        &__item
+        {
+            width: 310px;
+            margin-bottom: 5px;
+
+            text-align: right;
+            &-title
+            {
+                font-family: @bold;
+                font-size: 20px;
+
+                position: relative;
+
+                margin-bottom: 10px;
+            }
+            &-img
+            {
+                position: relative;
+                top: -77px;
+                left: 362px;
+
+                display: block;
+
+                fill: @color_white;
+            }
+
+            &-wrap
+            {
+                position: relative;
+
+                &:before
+                {
+                    position: absolute;
+                    top: -104px;
+                    right: -148px;
+
+                    display: block;
+
+                    width: 130px;
+                    height: 123px;
+
+                    content: '';
+
+                    background-image: url('@{img}/back.png')/** sprite-ref: mysprite; */;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+
+
+    &-right
+    {
+        float: right;
+
+        width: 50%;
+        padding-left: 120px;
+
+        &__item
+        {
+            width: 310px;
+            margin-bottom: 5px;
+            margin-left: 45px;
+
+            text-align: left;
+            &-title
+            {
+                font-family: @bold;
+                font-size: 20px;
+
+                position: relative;
+
+                margin-bottom: 10px;
+
+                color: @color_gray;
+            }
+            &-img
+            {
+                position: relative;
+                top: -77px;
+                left: -111px;
+
+                display: block;
+
+                fill: @color_white;
+
+                &--fix
+                {
+                    left: -102px;
+                }
+            }
+
+            &-wrap
+            {
+                position: relative;
+
+                &:before
+                {
+                    position: absolute;
+                    top: -104px;
+                    right: 330px;
+
+                    display: block;
+
+                    width: 130px;
+                    height: 123px;
+
+                    content: '';
+
+                    background-image: url('@{img}/back.png')/** sprite-ref: mysprite; */;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}
