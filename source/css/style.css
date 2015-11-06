@@ -640,6 +640,36 @@ a {
   background-image: url('../img/back.png') /** sprite-ref: mysprite; */;
   background-repeat: no-repeat;
 }
+.social {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 67px;
+  margin: 0;
+  padding: 0;
+}
+.social__link {
+  display: inline-block;
+  margin-right: 2px;
+  padding-top: 15px;
+  padding-left: 20px;
+  background-color: #ffca26;
+  width: 67px;
+  height: 67px;
+}
+.social__link--tw {
+  padding-left: 15px;
+}
+.social__link--in {
+  padding-left: 15px;
+}
+.social__link-img {
+  display: block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  fill: #ffffff;
+}
 .block3-container {
   margin-top: 116px;
   background-color: #f3f3f3;
@@ -655,36 +685,67 @@ a {
   background-image: url('../img/profile.jpg');
   background-repeat: no-repeat;
 }
-.block3 .social {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  height: 67px;
-  margin: 0;
-  padding: 0;
-}
-.block3 .social__link {
-  display: inline-block;
-  margin-right: 2px;
-  padding-top: 15px;
-  padding-left: 20px;
-  background-color: #ffca26;
-  width: 67px;
-  height: 67px;
-}
-.block3 .social__link--tw {
-  padding-left: 15px;
-}
-.block3 .social__link--in {
-  padding-left: 15px;
-}
-.block3 .social__link-img {
-  display: block;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  fill: #ffffff;
-}
 .block3-right {
+  display: block;
   float: right;
+  width: 422px;
+  margin-left: 58px;
+}
+.block3-right__title {
+  font-family: latobold;
+  font-size: 24px;
+  font-weight: 100;
+  display: block;
+  width: 400px;
+  margin-bottom: 34px;
+  padding-top: 36px;
+  color: #333333;
+}
+.block3-right__text {
+  font-family: latoregular;
+  font-size: 14px;
+  line-height: 1.4;
+  display: block;
+  width: 400px;
+  margin-bottom: 85px;
+  color: #999999;
+}
+.block3-right__list {
+  margin-top: 10px;
+  padding-left: 0;
+}
+.block3-right__item {
+  font-family: latoregular;
+  font-size: 14px;
+  list-style-type: none;
+  color: #999999;
+}
+.block3-right__item-list {
+  width: 100%;
+  height: 12.5px;
+  margin-top: 4px;
+  margin-bottom: 24px;
+  padding-left: 0;
+  list-style-type: none;
+  background-color: #999999;
+}
+.block3-right__item-html {
+  width: 93%;
+  height: 12.5px;
+  background-color: #ffca26;
+}
+.block3-right__item-ux {
+  width: 100%;
+  height: 12.5px;
+  background-color: #ffca26;
+}
+.block3-right__item-js {
+  width: 71%;
+  height: 12.5px;
+  background-color: #ffca26;
+}
+.block3-right__item-wp {
+  width: 71%;
+  height: 12.5px;
+  background-color: #ffca26;
 }
