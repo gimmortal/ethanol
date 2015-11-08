@@ -1,0 +1,98 @@
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.icon-name {
+	font-size: 32px; // works because "width" & "height" were set using em units
+	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}
+======================================================================================== */
+
+.icon-search {
+	width: 0.9287109375em;
+}
+
+.icon-refresh {
+	width: 0.8571428571428572em;
+}
+
+.icon-image {
+	width: 1.0712890625em;
+}
+
+.icon-pencil {
+	width: 0.8571428571428572em;
+}
+
+.icon-map-marker {
+	width: 0.5712890625em;
+}
+
+.icon-thumbs-o-up {
+	width: 0.8571428571428572em;
+}
+
+.icon-phone {
+	width: 0.7861328125em;
+}
+
+.icon-twitter {
+	width: 0.9287109375em;
+}
+
+.icon-facebook {
+	width: 0.5712890625em;
+}
+
+.icon-group {
+	width: 1.0712890625em;
+}
+
+.icon-pinterest {
+	width: 0.8571428571428572em;
+}
+
+.icon-google-plus {
+	width: 0.9287109375em;
+}
+
+.icon-linkedin {
+	width: 0.8571428571428572em;
+}
+
+.icon-lightbulb-o {
+	width: 0.5712890625em;
+}
+
+.icon-desktop {
+	width: 1.0712890625em;
+}
+
+.icon-mobile {
+	width: 0.4287109375em;
+}
+
+.icon-dribbble {
+	width: 0.8571428571428572em;
+}
+
+.icon-bank {
+	width: 1.0711495535714284em;
+}
+
+.icon-stumbleupon {
+	width: 1.0712890625em;
+}
+
+.icon-file-image-o {
+	width: 0.8571428571428572em;
+}
+
+.icon-file-code-o {
+	width: 0.8571428571428572em;
+}

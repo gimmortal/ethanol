@@ -37,13 +37,15 @@ module.exports = function (grunt) {
         postcss: {
             options: {
                 processors: [
-                    require('autoprefixer')({browsers: 'last 3 versions'})
+                    require('autoprefixer')({browsers: 'last 2 versions'})
                 ]
             },
             style: {
-                src: 'source/css/*.css'
+                src: 'build/css/*.css'
             }
         },
+
+
 
         csscomb: {
             style: {
@@ -142,6 +144,7 @@ module.exports = function (grunt) {
         "clean",
         "copy",
         //"cmq",
+        "postcss",
         "smartsprites",
         "cssmin",
         "imagemin",
