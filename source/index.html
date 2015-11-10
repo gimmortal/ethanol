@@ -315,7 +315,7 @@
             <div class="wrapper">
                 <div class="workers-item">
                     <div class="workers-item__photo">
-                        <div class="workers-item__photo-review">
+                        <div class="workers-item__photo-review workers-item__photo-review--close">
                             Imperdiet nulla sem fringilla, purus enim amet, nascetur faucibus, adipiscing neque ut
                             bibendum, at felis nec in.
                         </div>
@@ -334,7 +334,7 @@
 
                 <div class="workers-item">
                     <div class="workers-item__photo workers-item__photo--two">
-                        <div class="workers-item__photo-review">
+                        <div class="workers-item__photo-review workers-item__photo-review--close">
                             Imperdiet nulla sem fringilla, purus enim amet, nascetur faucibus, adipiscing neque ut
                             bibendum, at felis nec in.
                         </div>
@@ -353,7 +353,7 @@
 
                 <div class="workers-item">
                     <div class="workers-item__photo">
-                        <div class="workers-item__photo-review">
+                        <div class="workers-item__photo-review workers-item__photo-review--close">
                             Imperdiet nulla sem fringilla, purus enim amet, nascetur faucibus, adipiscing neque ut
                             bibendum, at felis nec in.
                         </div>
@@ -371,16 +371,42 @@
             </div>
         </div>
         <div class="wrapper">
-            <form class="workers-controls" action="">
-                <input class="workers-controls__radio"type="radio" name="one"/>
-                <input class="workers-controls__radio" checked="checked" type="radio" name="one"/>
-                <input class="workers-controls__radio" type="radio" name="one"/>
-            </form>
+            <div class="workers-controls">
+                <a class="workers-controls__item" href="#"></a>
+                <a class="workers-controls__item" href="#"></a>
+                <a class="workers-controls__item" href="#"></a>
+            </div>
+            <!--<form class="workers-controls" action="">-->
+            <!--<input class="workers-controls__radio"type="radio" name="one"/>-->
+            <!--<input class="workers-controls__radio" checked="checked" type="radio" name="one"/>-->
+            <!--<input class="workers-controls__radio" type="radio" name="one"/>-->
+            <!--</form>-->
         </div>
     </div>
 </header>
-
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+        var link = document.querySelector('.workers-controls__item');
+        var block = document.querySelector('.workers-item__photo-review');
+        var close = block.querySelector('.workers-item__photo-review--close');
+
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            block.classList.add('workers-item__photo-review--show');
+        }, false);
+
+        close.addEventListener('click', function(event) {
+            event.preventDefault();
+            block.classList.remove('workers-item__photo-review--show');
+        }, false);
+
+
+    });
+
+</script>
 </body>
 </html>

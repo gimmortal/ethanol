@@ -1,5 +1,3 @@
-/** sprite: mysprite; sprite-image: url('../img/mysprite.png'); sprite-layout: vertical */
-/** sprite: myspritejpg; sprite-image: url('../img/mysprite.jpg'); sprite-layout: vertical */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -391,13 +389,8 @@ th {
   src: url('../font/lato-italic.eot?#iefix') format('embedded-opentype'), url('../font/lato-italic.woff') format('woff'), url('../font/lato-italic.ttf') format('truetype');
 }
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
-}
-html {
-  width: 100%;
 }
 a {
   text-decoration: none;
@@ -449,7 +442,8 @@ a {
   width: 58px;
   height: 56px;
   content: '';
-  background-image: url('../img/e.png') /** sprite-ref: mysprite; */;
+  background-image: url('../img/mysprite.png');
+  background-position: left -0px;
 }
 .logo {
   float: left;
@@ -550,7 +544,8 @@ a {
   height: 44px;
   margin-bottom: 62px;
   content: '';
-  background-image: url('../img/logo-invers.png') /** sprite-ref: mysprite; */;
+  background-image: url('../img/mysprite.png');
+  background-position: left -56px;
   background-repeat: no-repeat;
   margin-right: auto;
   margin-left: auto;
@@ -599,7 +594,8 @@ a {
   width: 130px;
   height: 123px;
   content: '';
-  background-image: url('../img/back.png') /** sprite-ref: mysprite; */;
+  background-image: url('../img/mysprite.png');
+  background-position: left -100px;
   background-repeat: no-repeat;
 }
 .features-right {
@@ -641,7 +637,8 @@ a {
   width: 130px;
   height: 123px;
   content: '';
-  background-image: url('../img/back.png') /** sprite-ref: mysprite; */;
+  background-image: url('../img/mysprite.png');
+  background-position: left -100px;
   background-repeat: no-repeat;
 }
 .social {
@@ -678,7 +675,6 @@ a {
   margin-bottom: 253px;
 }
 .stats-container {
-  min-width: 940px;
   margin-top: 116px;
   background-color: #f3f3f3;
 }
@@ -780,7 +776,6 @@ a {
 }
 .stats-bottom {
   display: block;
-  min-width: 940px;
   border-top: 2px solid #cccccc;
   border-bottom: 2px solid #cccccc;
   background-color: #f3f3f3;
@@ -819,21 +814,17 @@ a {
   padding-top: 0;
 }
 .workers-controls {
+  display: block;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
-.workers-controls__item {
-  background-color: #f3f3f3;
-  border-radius: 50%;
+.workers-controls__radio {
   display: inline-block;
   *zoom: 1;
   /* Fix for IE7 */
   *display: inline;
   /* Fix for IE7 */
-  width: 17px;
-  height: 17px;
-}
-.workers-controls__item:hover {
-  background-color: #bababa;
 }
 .workers-item {
   width: 300px;
@@ -853,13 +844,15 @@ a {
   width: 300px;
   height: 466px;
   margin-bottom: 47px;
-  background-image: url('../img/photo1.jpg') /** sprite-ref: myspritejpg; */;
+  background-image: url('../img/mysprite.jpg');
+  background-position: left -0px;
   background-repeat: no-repeat;
   margin-right: auto;
   margin-left: auto;
 }
 .workers-item__photo--two {
-  background-image: url('../img/photo2.jpg') /** sprite-ref: myspritejpg; */;
+  background-image: url('../img/mysprite.jpg');
+  background-position: left -466px;
 }
 .workers-item__photo-review {
   font-family: latoregular;
@@ -874,12 +867,7 @@ a {
   padding-left: 25px;
   color: #ffffff;
   background: rgba(0, 0, 0, 0.8);
-}
-.workers-item__photo-review--close {
   display: none;
-}
-.workers-item__photo-review--show {
-  display: block;
 }
 .workers-item__name {
   font-family: latoregular;
