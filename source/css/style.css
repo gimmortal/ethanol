@@ -816,6 +816,7 @@ a {
 }
 .workers {
   display: block;
+  margin-bottom: 294px;
   padding-top: 0;
 }
 .workers-controls {
