@@ -118,7 +118,7 @@ module.exports = function (grunt) {
             options: {
                 plugins: [
                     { removeViewBox: false },
-                    { removeUselessStrokeAndFill: false }
+                    { removeUselessStrokeAndFill: true }
                 ]
             },
             ui: {                                         // Target
@@ -126,7 +126,7 @@ module.exports = function (grunt) {
                     expand: true,       // Enable dynamic expansion.
                     cwd: 'source/img/svg',     // Src matches are relative to this path.
                     src: ['**/*.svg'],  // Actual pattern(s) to match.
-                    dest: 'source/img/svg2/ui-separate',       // Destination path prefix.
+                    dest: 'source/img/svg_optimizer',       // Destination path prefix.
                     ext: '.svg'     // Dest filepaths will have this extension.
                     // ie: optimise img/src/branding/logo.svg and store it in img/branding/logo.min.svg
                 }]
@@ -134,13 +134,29 @@ module.exports = function (grunt) {
         },
 
 
-        "svg-sprites": {
-            options: {
-                spriteElementPath: "sprites",
-                spritePath: "sprites/img/sprites",
-                cssPath: "css"
-            }
+        //"svg-sprites": {
+        //    options: {
+        //        spriteElementPath: "sprites",
+        //        spritePath: "sprites/img/sprites",
+        //        cssPath: "css"
+        //    }
+        //
+        //},
 
+        svgstore: {
+            options: {
+                includeTitleElement: false,
+                prefix: 'icon-',
+                formatting: {
+
+                    indent_size: 2
+                }
+            },
+            default: {
+                files: {
+                    'source/img/mysprite.svg': ['source/img/svg_optimizer/*.svg'],
+                }
+            }
         },
 
         smartsprites: {
