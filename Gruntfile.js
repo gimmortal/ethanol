@@ -114,6 +114,35 @@ module.exports = function (grunt) {
             }
         },
 
+        svgmin: {
+            options: {
+                plugins: [
+                    { removeViewBox: false },
+                    { removeUselessStrokeAndFill: false }
+                ]
+            },
+            ui: {                                         // Target
+                files: [{               // Dictionary of files
+                    expand: true,       // Enable dynamic expansion.
+                    cwd: 'source/img/svg',     // Src matches are relative to this path.
+                    src: ['**/*.svg'],  // Actual pattern(s) to match.
+                    dest: 'source/img/svg2/ui-separate',       // Destination path prefix.
+                    ext: '.svg'     // Dest filepaths will have this extension.
+                    // ie: optimise img/src/branding/logo.svg and store it in img/branding/logo.min.svg
+                }]
+            }
+        },
+
+
+        "svg-sprites": {
+            options: {
+                spriteElementPath: "sprites",
+                spritePath: "sprites/img/sprites",
+                cssPath: "css"
+            }
+
+        },
+
         smartsprites: {
             main: {
                 documentRootDirPath: './',
