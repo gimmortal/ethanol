@@ -936,3 +936,65 @@ a {
   margin-top: 70px;
   margin-bottom: 116px;
 }
+.welcome-container {
+  min-width: 940px;
+  min-height: 840px;
+  margin-top: 124px;
+  padding-top: 110px;
+  background-color: #f3f3f3;
+}
+.welcome-menu {
+  float: left;
+}
+.welcome-menu__item {
+  display: block;
+  width: 300px;
+  height: 90px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 20px;
+  color: #999999;
+  background-color: #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+.welcome-menu__item-img {
+  margin-right: 20px;
+  fill: #333333;
+  display: inline-block;
+  *zoom: 1;
+  /* Fix for IE7 */
+  *display: inline;
+  /* Fix for IE7 */
+}
+.welcome-menu__item-title {
+  font-family: latobold;
+  font-size: 14px;
+  line-height: 20px;
+  width: 200px;
+  padding-top: 15px;
+  vertical-align: top;
+  text-transform: uppercase;
+  display: inline-block;
+  *zoom: 1;
+  /* Fix for IE7 */
+  *display: inline;
+  /* Fix for IE7 */
+}
+.welcome-menu__item-description {
+  font-family: latoregular;
+  font-size: 14px;
+  display: block;
+  text-transform: none;
+}
+.welcome-menu__item:hover {
+  color: #ffffff;
+  background-color: #ffca26;
+  box-shadow: 0 3px 0 #996600;
+}
+.welcome-menu__item:hover .welcome-menu__item-img {
+  fill: #ffffff;
+}

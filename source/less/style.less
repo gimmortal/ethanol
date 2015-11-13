@@ -10,3 +10,83 @@
 @import 'block/stats.less';
 @import 'block/workers.less';
 
+.welcome
+{
+    &-container
+    {
+        min-width: 940px;
+        min-height: 840px;
+        margin-top: 124px;
+        padding-top: 110px;
+
+        background-color: @color_profile;
+    }
+
+    &-menu
+    {
+        float: left;
+
+        &__item
+        {
+            display: block;
+
+            width: 300px;
+            height: 90px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 20px;
+
+            color: @color_gray;
+            background-color: @color_white;
+
+            .rounded(4px);
+            .outer-shadow(0, 3px, 0, .3);
+
+            &-img
+            {
+                margin-right: 20px;
+
+                fill: @color_black;
+                .inline-block;
+            }
+
+            &-title
+            {
+                font-family: @bold;
+                font-size: 14px;
+                line-height: 20px;
+
+                width: 200px;
+                padding-top: 15px;
+
+                vertical-align: top;
+                text-transform: uppercase;
+
+                .inline-block;
+            }
+
+            &-description
+            {
+                font-family: @regular;
+                font-size: 14px;
+
+                display: block;
+
+                text-transform: none;
+            }
+
+            &:hover
+            {
+                color: @color_white;
+                background-color: @color_yellow;
+                box-shadow: 0 3px 0 rgba(153,102,0,1);
+            }
+
+            &:hover &-img
+            {
+                fill: @color_white;
+            }
+        }
+    }
+}
