@@ -9,83 +9,181 @@
 @import 'block/social.less';
 @import 'block/stats.less';
 @import 'block/workers.less';
+@import 'block/welcome.less';
 
-.welcome
+.projects
 {
-    &-container
+    min-width: 940px;
+    &-buttons
     {
-        min-width: 940px;
-        min-height: 840px;
-        margin-top: 124px;
-        padding-top: 110px;
+        font-family: @regular;
+        font-size: 14px;
 
-        background-color: @color_profile;
+        margin-top: 145px;
+        margin-bottom: 40px;
+
+        text-align: center;
+
+        &__link
+        {
+            margin-right: 5px;
+            padding-top: 9px;
+            padding-right: 17px;
+            padding-bottom: 9px;
+            padding-left: 17px;
+
+            color: @color_pro;
+            border: 1px solid @color_border;
+
+            .rounded(2px);
+
+            &:hover
+            {
+                background-color: @color_hover;
+            }
+            &:last-child
+            {
+                margin-right: 0;
+            }
+        }
     }
 
-    &-menu
+    &-list
     {
-        float: left;
+        display: block;
 
-        &__item
+        min-width: 940px;
+        padding-left: 0;
+
+        text-align: center;
+
+        .center;
+    }
+
+    &-item
+    {
+        position: relative;
+        z-index: 1;
+
+        display: table-cell;
+
+        list-style-type: none;
+
+        text-align: center;
+        vertical-align: top;
+
+        background-repeat: no-repeat;
+
+        .center;
+        .size(255px, 255px);
+
+        &__img1
+        {
+            background-image: url('@{img}/project_1.jpg');
+        }
+
+        &__img2
+        {
+            background-image: url('@{img}/project_2.jpg');
+        }
+
+        &__img3
+        {
+            background-image: url('@{img}/project_3.jpg');
+        }
+
+        &__img4
+        {
+            background-image: url('@{img}/project_4.jpg');
+        }
+        &__img5
+        {
+            background-image: url('@{img}/project_5.jpg');
+        }
+
+        &__img6
+        {
+            background-image: url('@{img}/project_6.jpg');
+        }
+
+
+
+        &:hover &__block
         {
             display: block;
+        }
 
-            width: 300px;
-            height: 90px;
-            margin-bottom: 10px;
-            padding-top: 10px;
-            padding-right: 10px;
-            padding-left: 20px;
+        &__block
+        {
+            border: 10px solid #e0b945;
+            background-color: rgba(255, 204, 51, .8);
 
-            color: @color_gray;
-            background-color: @color_white;
-
-            .rounded(4px);
-            .outer-shadow(0, 3px, 0, .3);
+            .hide;
+            .size(100%, 100%);
 
             &-img
             {
-                margin-right: 20px;
+                position: absolute;
+                top: 9px;
+                left: 8px;
 
-                fill: @color_black;
-                .inline-block;
+                display: block;
+
+                width: 15px;
+                height: 15px;
+
+                fill: @color_white;
+            }
+
+            &-link
+            {
+                position: relative;
+
+                display: inline-block;
+
+                margin-top: 80px;
+                margin-right: 10px;
+                margin-bottom: 20px;
+
+                border: 2px solid @color_white;
+
+                .size(34px, 34px);
+                .rounded(50%);
+
+                &:nth-last-of-type(1)
+                {
+                    margin-right: 0;
+                }
+
+                //&:hover
+                //{
+                //    border: 2px solid @color_black;
+                //}
+                //
+                //&:hover &-img
+                //{
+                //    fill: @color_black;
+                //}
             }
 
             &-title
             {
                 font-family: @bold;
-                font-size: 14px;
-                line-height: 20px;
+                font-size: 12px;
+                font-weight: 100;
 
-                width: 200px;
-                padding-top: 15px;
-
-                vertical-align: top;
                 text-transform: uppercase;
 
-                .inline-block;
+                color: @color_black;
             }
 
-            &-description
+            &-text
             {
                 font-family: @regular;
-                font-size: 14px;
+                font-size: 12px;
+                font-style: italic;
 
-                display: block;
-
-                text-transform: none;
-            }
-
-            &:hover
-            {
-                color: @color_white;
-                background-color: @color_yellow;
-                box-shadow: 0 3px 0 rgba(153,102,0,1);
-            }
-
-            &:hover &-img
-            {
-                fill: @color_white;
+                color: #960;
             }
         }
     }

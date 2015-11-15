@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<svg xmlns="http://www.w3.org/2000/svg" style="width:0;height:0;visibility:hidden;">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol viewBox="0 0 60 56" id="icon-bank">
         <path d="M30 0l30 12v4h-4q0 .812-.64 1.406T53.842 18H6.155q-.875 0-1.516-.594T3.997 16h-4v-4zM8 20h8v24h4V20h8v24h4V20h8v24h4V20h8v24h1.844q.875 0 1.516.594T56 46v2H4v-2q0-.812.642-1.406T6.158 44h1.844V20zm49.844 30q.875 0 1.516.594T60 52v4H0v-4q0-.812.642-1.406T2.158 50h55.688z"/>
     </symbol>
@@ -93,6 +93,12 @@
     </symbol>
     <symbol viewBox="0 0 67 51" id="icon-video-camera">
         <path d="M56 11v34q0 1.313-1.22 1.844Q54.376 47 54 47q-.844 0-1.406-.594L40 33.812V39q0 3.718-2.64 6.358T31 47.998H9q-3.72 0-6.36-2.64T0 38.998V17q0-3.718 2.64-6.358T9 8h22q3.72 0 6.36 2.64T40 17v5.155L52.594 9.593Q53.157 9 54 9q.375 0 .78.155Q56 9.685 56 11z"/>
+    </symbol>
+    <symbol id="icon-mail-forward" viewBox="0 0 951 1024">
+        <path d="M1024 365.714q0 14.857-10.857 25.714l-292.571 292.571q-10.857 10.857-25.714 10.857t-25.714-10.857-10.857-25.714v-146.286h-128q-56 0-100.286 3.429t-88 12.286-76 24.286-60.286 39.714-45.714 57.714-27.714 79.143-10 103.429q0 31.429 2.857 70.286 0 3.429 1.429 13.429t1.429 15.143q0 8.571-4.857 14.286t-13.429 5.714q-9.143 0-16-9.714-4-5.143-7.429-12.571t-7.714-17.143-6-13.714q-72.571-162.857-72.571-257.714 0-113.714 30.286-190.286 92.571-230.286 500-230.286h128v-146.286q0-14.857 10.857-25.714t25.714-10.857 25.714 10.857l292.571 292.571q10.857 10.857 10.857 25.714z"></path>
+    </symbol>
+    <symbol id="icon-chain" viewBox="0 0 951 1024">
+        <path d="M832 694.857q0-22.857-16-38.857l-118.857-118.857q-16-16-38.857-16-24 0-41.143 18.286 1.714 1.714 10.857 10.571t12.286 12.286 8.571 10.857 7.429 14.571 2 15.714q0 22.857-16 38.857t-38.857 16q-8.571 0-15.714-2t-14.571-7.429-10.857-8.571-12.286-12.286-10.571-10.857q-18.857 17.714-18.857 41.714 0 22.857 16 38.857l117.714 118.286q15.429 15.429 38.857 15.429 22.857 0 38.857-14.857l84-83.429q16-16 16-38.286zM430.286 292q0-22.857-16-38.857l-117.714-118.286q-16-16-38.857-16-22.286 0-38.857 15.429l-84 83.429q-16 16-16 38.286 0 22.857 16 38.857l118.857 118.857q15.429 15.429 38.857 15.429 24 0 41.143-17.714-1.714-1.714-10.857-10.571t-12.286-12.286-8.571-10.857-7.429-14.571-2-15.714q0-22.857 16-38.857t38.857-16q8.571 0 15.714 2t14.571 7.429 10.857 8.571 12.286 12.286 10.571 10.857q18.857-17.714 18.857-41.714zM941.714 694.857q0 68.571-48.571 116l-84 83.429q-47.429 47.429-116 47.429-69.143 0-116.571-48.571l-117.714-118.286q-47.429-47.429-47.429-116 0-70.286 50.286-119.429l-50.286-50.286q-49.143 50.286-118.857 50.286-68.571 0-116.571-48l-118.857-118.857q-48-48-48-116.571t48.571-116l84-83.429q47.429-47.429 116-47.429 69.143 0 116.571 48.571l117.714 118.286q47.429 47.429 47.429 116 0 70.286-50.286 119.429l50.286 50.286q49.143-50.286 118.857-50.286 68.571 0 116.571 48l118.857 118.857q48 48 48 116.571z"></path>
     </symbol>
 </svg>
 
@@ -454,20 +460,20 @@
             </div>
         </div>
 
-            <div class="welcome-container">
-                <div class="wrapper">
+        <div class="welcome-container">
+            <div class="wrapper">
                 <div class="welcome-menu">
-                    <a href="#" class="welcome-menu__item">
-                         <svg class="welcome-menu__item-img" width="43" height="73">
+                    <a href="#" class="welcome-menu__item welcome-menu__item--active">
+                        <svg class="welcome-menu__item-img" width="43" height="73">
                             <use xlink:href="#icon-desktop"/>
-                         </svg>
+                        </svg>
                         <div class="welcome-menu__item-title">
                             internet communication
                             <span class="welcome-menu__item-description">
                                 sub title here
                             </span>
                         </div>
-                        </a>
+                    </a>
                     <a href="#" class="welcome-menu__item">
                         <svg class="welcome-menu__item-img" width="40" height="73">
                             <use xlink:href="#icon-pencil"/>
@@ -513,8 +519,138 @@
                         </div>
                     </a>
                 </div>
+                <div class="welcome-communication">
+                    <h3 class="welcome-communication__title">
+                        Internet communication
+                    </h3>
+                    <div class="welcome-communication__description">
+                        Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus
+                        vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae
+                        faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec,
+                        fermentum arcu praesent.
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="projects">
+        <div class="section">
+            <div class="wrapper">
+                <h2 class="section__header">Our work is <span>incredible</span></h2>
+
+                <div class="section__text">We design and build functional and beautiful websites</div>
+            </div>
+        </div>
+
+        <div class="projects-buttons">
+            <div class="wrapper">
+            <a href="#" class="projects-buttons__link">All</a>
+            <a href="#" class="projects-buttons__link">Website</a>
+            <a href="#" class="projects-buttons__link">Graphic</a>
+            <a href="#" class="projects-buttons__link">Identity</a>
+            <a href="#" class="projects-buttons__link">Mobile Apps</a>
+        </div>
+        </div>
+
+        <ul class="projects-list">
+            <li class="projects-item projects-item__img1">
+                <div class="projects-item__block">
+                    <a href="" class="projects-item__block-link">
+                        <svg class="projects-item__block-img" width="20" height="20">
+                            <use xlink:href="#icon-chain"/>
+                        </svg>
+                    </a>
+                    <a href="" class="projects-item__block-link">
+                        <svg class="projects-item__block-img" width="20" height="20">
+                            <use xlink:href="#icon-mail-forward"/>
+                        </svg>
+                    </a>
+                    <div class="projects-item__block-title">Flat Mockup</div>
+                    <div class="projects-item__block-text">Identity</div>
+                </div>
+            </li>
+            <li class="projects-item projects-item__img2">
+                <div class="projects-item__block">
+                    <a href="" class="projects-item__block-link">
+                        <svg class="projects-item__block-img" width="20" height="20">
+                            <use xlink:href="#icon-chain"/>
+                        </svg>
+                    </a>
+                    <a href="" class="projects-item__block-link">
+                        <svg class="projects-item__block-img" width="20" height="20">
+                            <use xlink:href="#icon-mail-forward"/>
+                        </svg>
+                    </a>
+                    <div class="projects-item__block-title">Flat Mockup</div>
+                    <div class="projects-item__block-text">Identity</div>
+                </div>
+            </li>
+            <li class="projects-item projects-item__img3">
+                <div class="projects-item__block">
+                    <a href="" class="projects-item__block-link">
+                        <svg class="projects-item__block-img" width="20" height="20">
+                            <use xlink:href="#icon-chain"/>
+                        </svg>
+                    </a>
+                    <a href="" class="projects-item__block-link">
+                        <svg class="projects-item__block-img" width="20" height="20">
+                            <use xlink:href="#icon-mail-forward"/>
+                        </svg>
+                    </a>
+                    <div class="projects-item__block-title">Flat Mockup</div>
+                    <div class="projects-item__block-text">Identity</div>
+                </div>
+            </li>
+            <li class="projects-item projects-item__img4">
+                <div class="projects-item__block">
+                    <a href="" class="projects-item__block-link">
+                        <svg class="projects-item__block-img" width="20" height="20">
+                            <use xlink:href="#icon-chain"/>
+                        </svg>
+                    </a>
+                    <a href="" class="projects-item__block-link">
+                        <svg class="projects-item__block-img" width="20" height="20">
+                            <use xlink:href="#icon-mail-forward"/>
+                        </svg>
+                    </a>
+                    <div class="projects-item__block-title">Flat Mockup</div>
+                    <div class="projects-item__block-text">Identity</div>
+                </div>
+            </li>
+            <li class="projects-item projects-item__img5">
+                <div class="projects-item__block">
+                    <a href="" class="projects-item__block-link">
+                        <svg class="projects-item__block-img" width="20" height="20">
+                            <use xlink:href="#icon-chain"/>
+                        </svg>
+                    </a>
+                    <a href="" class="projects-item__block-link">
+                        <svg class="projects-item__block-img" width="20" height="20">
+                            <use xlink:href="#icon-mail-forward"/>
+                        </svg>
+                    </a>
+                    <div class="projects-item__block-title">Flat Mockup</div>
+                    <div class="projects-item__block-text">Identity</div>
+                </div>
+            </li>
+            <li class="projects-item projects-item__img6">
+                <div class="projects-item__block">
+                    <a href="" class="projects-item__block-link">
+                        <svg class="projects-item__block-img" width="20" height="20">
+                            <use xlink:href="#icon-chain"/>
+                        </svg>
+                    </a>
+                    <a href="" class="projects-item__block-link">
+                        <svg class="projects-item__block-img" width="20" height="20">
+                            <use xlink:href="#icon-mail-forward"/>
+                        </svg>
+                    </a>
+                    <div class="projects-item__block-title">Flat Mockup</div>
+                    <div class="projects-item__block-text">Identity</div>
+                </div>
+            </li>
+        </ul>
     </div>
 </header>
 <script src="js/jquery-2.1.4.min.js"></script>
