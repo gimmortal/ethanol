@@ -11,96 +11,115 @@
 @import 'block/workers.less';
 @import 'block/welcome.less';
 @import 'block/projects.less';
+@import 'block/best.less';
 
-.best
+.price
 {
-    &-container
+    &-block
     {
-        min-height: 900px;
-        margin-top: 131px;
-
-        background-color: @color_profile;
-    }
-
-    &-list
-    {
-        position: relative;
-        left: -135px;
-
-        padding-top: 123px;
-
-        list-style-type: none;
-
-
-        //&:before
-        //{
-        //    border-left: 2px solid @color_white;
-        //}
-    }
-
-    &-item
-    {
-        &__backside
+        margin: 0;
+        margin-top: 140px;
+        padding: 0;
+        &__item
         {
-            position: relative;
-
-            margin-right: 30px;
-            margin-left: 30px;
-
-            background-image: url('@{img}/back.png');
-            background-repeat: no-repeat;
-
-            .inline-block;
-            .size(130px, 123px);
-        }
-
-        &__img
-        {
-            position: absolute;
-            top: 32px;
-            left: 40px;
-
-            fill: @color_white;
-        }
-
-        &__title
-        {
-            font-family: @bold;
-            font-size: 20px;
-
-            width: 580px;
-            margin-top: 10px;
-
-            vertical-align: top;
-            text-transform: uppercase;
-
-            color: @color_black;
-
-            .inline-block;
-        }
-
-        &__description
-        {
-            font-family: @regular;
-            font-size: 14px;
-
             display: block;
 
-            padding-top: 15px;
+            border: 1px solid @color_black;
 
-            text-transform: none;
+            .rounded(5px);
+            .size(325px, 500px);
 
-            color: @color_pro;
+            &-name
+            {
+                font-family: @bold;
+                font-size: 22px;
+
+                margin-bottom: 20px;
+                padding-top: 32px;
+
+                text-align: center;
+                text-transform: uppercase;
+
+                color: @color_white;
+                background-color: @color_black;
+
+                .border-radius(3px, 3px, 0px, 0px);
+                .size(100%, 95px);
+            }
+
+            &-value
+            {
+                font-family: @bold;
+                font-size: 65.5px;
+
+                margin-bottom: 5px;
+                padding-bottom: 10px;
+                padding-left: 25px;
+
+                text-align: center;
+
+                color: @color_pro;
+                border-bottom: 1px solid @color_black;
+
+                & span
+                {
+                    font-family: @regular;
+                    font-size: 26.2px;
+                }
+
+                &:before
+                {
+                    font-family: @bold;
+                    font-size: 39.3px;
+
+                    position: relative;
+                    top: -16px;
+                    left: 10px;
+
+                    content: '$';
+                }
+            }
+
+            &-list
+            {
+                font-family: @regular;
+                font-size: 14px;
+
+                margin: 0;
+                margin-bottom: 11px;
+                padding: 0;
+
+                list-style-type: none;
+
+                text-align: center;
+
+                color: #838383;
+
+                & li
+                {
+                    line-height: 40px;
+                }
+            }
+
+            &-button
+            {
+                font-family: @bold;
+                font-size: 11px;
+
+                display: block;
+
+                padding-top: 18px;
+
+                text-align: center;
+                text-transform: uppercase;
+
+                color: @color_white;
+                background-color: @color_black;
+
+                .rounded(4px);
+                .center;
+                .size(250px, 50px);
+            }
         }
-    }
-
-    &-border
-    {
-        display: block;
-
-        min-height: 900px;
-        margin-left: 135px;
-
-        border-left: 5px solid @color_white;
     }
 }
